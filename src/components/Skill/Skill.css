@@ -1,0 +1,114 @@
+
+
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
+
+.skill-container{
+    font-family: 'Dancing Script', cursive;
+  position:relative;
+  margin:0 auto;
+  top:5px;
+
+}
+.neonText-lightBlue{
+  padding:20px;
+  color:#fff;
+  text-align:center;
+  text-shadow:
+    0 0 5px #25d7fb,
+    0 0 10px #25d7fb,
+    0 0 15px #25d7fb,
+    0 0 20px #25d7fb,
+    0 0 25px #25d7fb,
+    0 0 30px #25d7fb
+    ;
+}
+.neonText-Lightgreen{
+  padding:20px;
+  color:#fff;
+  text-align:center;
+  text-shadow:
+    0 0 5px #00ff66,
+    0 0 10px #00ff66,
+    0 0 15px #00ff66,
+    0 0 20px #00ff66,
+    0 0 25px #00ff66,
+    0 0 30px #00ff66
+    ;
+}
+.neonText-LightPink{
+  padding:20px;
+  color:#fff;
+  text-align:center;
+  text-shadow:
+    0 0 5px #ff63a2,
+    0 0 10px #ff63a2,
+    0 0 15px #ff63a2,
+    0 0 20px #ff63a2,
+    0 0 25px #ff63a2,
+    0 0 30px #ff63a2
+    ;
+}
+
+
+/* Skills section */
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.SkillBox{
+  width: max(15%,150px);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 25px 25px 0px;
+  border: 3px solid #431f47;
+  font-size: 64px;
+  border-radius: 5px;
+  transition: 0.5s;
+
+}
+.SkillBox:hover{
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px 0 #431f47;
+}
+
+.SkillsHeading{
+  text-align: center;
+  margin: 50px 10px;
+  font-size: 36px;
+  letter-spacing: 0.6px;
+}
+
+@media(max-width: 500px) {
+  .AboutText{
+    font-size: 16px;
+  }
+  .Avatar{
+    width: 200px;
+    margin-bottom: 25px;
+  }
+
+  .SkillsHeading{
+    font-size: 26px;
+  }
+  .SkillBox{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    margin:10px auto;
+  
+  }
+
+}
+
+@media (max-width:300px){
+  .skill-container{
+    font-size: 1.6rem;
+  }
+}
+

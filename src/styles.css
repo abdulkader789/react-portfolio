@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    /* background-color:  #00121B; */
+    font-size: 16px; /* Set a base font size for the root element */
+}
+
+@font-face {
+    font-family: 'Montserrat';    
+    src: url('./fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prosto One';    
+    src: url('./fonts/Prosto_One/ProstoOne-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+

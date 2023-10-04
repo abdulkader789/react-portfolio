@@ -1,0 +1,179 @@
+
+
+// project.jsx start
+
+import './Project.css'
+
+import { useLoading } from '../Loader/useLoading';
+import Loader from '../Loader/Loader'
+const Project = () => {
+    const isLoading = useLoading();
+
+    return (
+
+        <div className='min-h-screen'>
+            {isLoading ? <Loader></Loader> :
+
+
+
+                <main>
+                    <article>
+                        <div className="project-container">
+
+                            <section className="neon-block">
+                                <div className="block">
+                                    <span className="rainbow"></span>
+                                    My Projects
+                                </div>
+                            </section>
+
+                            <section className="neon-cards">
+                                <div className="card">
+                                    <h3>Title neon card</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi itaque hic possimus laborum placeat dicta pariatur, corporis quae magni?</p>
+                                </div>
+                                <div className="card">
+                                    <h3>Title neon card</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi itaque hic possimus laborum placeat dicta pariatur, corporis quae magni?</p>
+                                </div>
+                                <div className="card">
+                                    <h3>Title neon card</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi itaque hic possimus laborum placeat dicta pariatur, corporis quae magni?</p>
+                                </div>
+                            </section>
+
+                        </div>
+                    </article>
+                </main>
+            }
+        </div>
+    );
+};
+
+export default Project;
+
+//project.jsx end//
+
+//project.css start
+:root {
+  --btn-duration-slow: 2s;
+  --btn-duration-normal: 3s;
+  --btn-duration-fast: 5s;
+  --btn-default-color: #7cfc00;
+  --btn-blue-color: #00bcd4;
+  --btn-purple-color: #772aff;
+}
+
+.project-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.neon-block .block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(45deg, #272325 40%, #020104);
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: monospace;
+}
+.neon-block .block:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  background: linear-gradient(45deg, #ff005e, #fbff00);
+  animation: neon-block 1.5s linear infinite;
+}
+.neon-block .block .rainbow {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  filter: blur(15px);
+  z-index: -2;
+}
+.neon-block .block .rainbow:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(315deg, #ff005e, #fbff00);
+}
+.neon-block .block .rainbow:after {
+  animation: neon-block 1.5s linear infinite;
+}
+
+@keyframes neon-block {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+.neon-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin-top: 60px;
+}
+@media (min-width: 540px) {
+  .neon-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .neon-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.neon-cards .card {
+  position: relative;
+  padding: 100px 20px;
+  color: #f2f2f2;
+  font-family: monospace;
+  line-height: 1.5;
+  background: linear-gradient(90deg, #010d31 0%, #010d31 50%, #010615 50%);
+}
+.neon-cards .card:before, .neon-cards .card:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+}
+.neon-cards .card:after {
+  z-index: -2;
+  filter: blur(30px);
+}
+.neon-cards .card:nth-child(1):before, .neon-cards .card:nth-child(1):after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+.neon-cards .card:nth-child(2):before, .neon-cards .card:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.neon-cards .card:nth-child(3):before, .neon-cards .card:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.neon-cards .card h3 {
+  margin-bottom: 10px;
+}
+
+//project.css end

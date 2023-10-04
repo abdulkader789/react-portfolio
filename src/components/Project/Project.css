@@ -1,0 +1,44 @@
+
+
+.project .light{
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+ text-align: center;
+  font-size: 5rem;
+  color: #913232;
+  text-shadow: 0 0 20px #e92e0d;
+  top: 20px;
+}
+.project .light:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(15px);
+}
+
+.project .light:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fe3e80;
+  z-index: -2;
+  opacity: -5;
+  filter: blur(40px);
+}
+
+.box{
+  
+  color: #1d7d0c;
+  border: 1px solid;
+  padding: 0.5rem 1.8rem; 
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px, 6px 6px 0px 0px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
