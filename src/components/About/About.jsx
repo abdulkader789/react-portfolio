@@ -9,16 +9,18 @@ const About = () => {
     const isLoading = useLoading();
 
     return (
-        <div className='relative top-10'>
+        <div className='relative pt-10'>
 
             {isLoading ? <Loader></Loader> :
-                <section>
-                    <div className="table-container" >
+                <section className=''>
+                    <h2 className='dark:hidden py-[1.5rem]   about-heading text-[#0f0f0f] font-[Montserrat] font-extrabold text-4xl sm:text-5xl capitalize text-center'>about me</h2>
+
+                    <div className="table-container hidden dark:block " >
                         <h2 className='about-heading text-[#80FF80] font-[Montserrat] text-4xl sm:text-5xl capitalize text-center'>about me</h2>
                     </div>
-                    <div className='flex w-full flex-col md:flex-row justify-center px-5'>
+                    <div className='flex w-full flex-col md:flex-row justify-center py-5 px-5 text-black dark:text-white'>
 
-                        <div className='w-full md:w-1/2 about-container py-10'>
+                        <div className='w-full md:w-1/2 about-container '>
 
                             <h2 className='about-heading text-4xl sm:text-5xl'>Get to <span>know</span> me!</h2>
                             <p className='about-text text-lg sm:text-xl'>

@@ -1,28 +1,24 @@
-nav .fa-icon{
+ .fa-icon{
 	font-size: 1.8rem;
 	cursor: pointer;
 	
 }
-nav{
-	position: static;
-	top:0;
+
+
+ .nav-title {
+	font-family: "Roboto";
+	border-radius: 50px;   
+	border-width: 10px;
 }
 
-nav .title-container {
+.dark-container-shadow{
 	text-shadow: 0 0 13px #fff, 0 0 5px #fff, 0 0 3px #fff, 0 0 40px #209991,
 		0 0 250px #209991, 0 0 154px #209991, 0 0 80px #209991;
-	animation: pulsate 2.5s infinite alternate;
 }
-nav .title {
-	font-family: "Roboto";
-	font-size: 1.2rem;
-    text-align: center;
-	border: 10px solid white;
+
+.dark-title-shadow{
 	box-shadow: 0 0 9px #fff, 0 0 5px #fff, 0 0 3px #fff, 0 0 40px #209991,
 		0 0 50px #209991, 0 0 40px #209991, inset 0 0 40px #209991;
-	border-radius: 50px;
-	font-weight: lighter;
-   
 }
 
 /* @keyframes pulsate {
@@ -34,33 +30,22 @@ nav .title {
 		text-shadow: 0 0 3px #fff, 0 0 14px #fff, 0 0 30px #fff, 0 0 3px #209991,
 			0 0 20px #209991, 0 0 40px #209991, 0 0 20px #209991;
 	}
-} */
-
-.small-title{
-	display: none;
-	    font-size: 1rem;
-		color: #fff;
-		text-shadow:
-		  0 0 5px #fff,
-		  0 0 10px #fff,
-		  0 0 20px #fff,
-		  0 0 40px #0ff,
-		  0 0 80px #0ff,
-		  0 0 90px #0ff,
-		  0 0 100px #0ff,
-		  0 0 150px #0ff;
-	  
 }
+*/ 
 
-@media(max-width:400px){
-	.title{
-		display:none;
-	}
-	.small-title{
-		display: block;
-		width: 100%;
-		
-	}
+
+@media(max-width:530px){
+  .full-text{
+	display: none;
+  }
+  .short-text{
+	display: block;
+	width:100px;
+  }
+  .nav-title{
+	border-radius: 20px;
+  }
+	
 	
 }
 
@@ -85,3 +70,12 @@ nav .title {
 	padding:3px;
 }
 
+/* .icon-container:hover .social-icons{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top:0;
+	height: 300px;
+	left: 0;
+	border:1px solid;
+} */

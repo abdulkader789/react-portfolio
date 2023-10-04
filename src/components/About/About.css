@@ -1,11 +1,10 @@
 .about-container {
   letter-spacing: 1.2px;
   font-family: "Raleway", sans-serif;
-  color: #E7E7E7;
 }
 .about-container span {
   font-weight: 900;
-  color: #17db35;
+  color: #10a326;
 }
 .about-container .about-heading {
   font-weight: 600;
@@ -19,7 +18,7 @@
 
 
 .table-container {
-	padding:1.5rem 0;
+	padding:1.2rem 0;
 	width: 100%;
 	transform-style: preserve-3d;
 	box-shadow: inset 0 -.5rem 1rem #00121B, inset 0 0 1rem #7FFFD4;

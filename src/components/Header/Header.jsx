@@ -20,45 +20,40 @@ import { TypeAnimation } from 'react-type-animation';
 const Header = () => {
 
     return (
-        <div className='flex h-[90vh] flex-col justify-center items-center md:flex-row'>
-            <div className='w-full relative box-shadow h-full md:w-1/2 '>
-                <h2 className=' md:text-4xl lg:text-5xl text-3xl _ProstoOne'>
-                    <span className='dark:text-white mb-2 inline-block'>Hello, I'm</span><br />
+        <div className='md:h-[95vh] flex flex-col items-center md:flex-row  relative'>
+            <div className=' flex flex-col items-center w-full box-shadow md:w-1/2 lg:mx-20 h-[450px] justify-center
+            dark:text-white'>
+                <h2 className=' md:text-4xl lg:text-5xl text-3xl _ProstoOne  w-full'>
+                    <span className='dark:text-white text-bslack mb-2 inline-block'>Hello, I'm</span><br />
                     <span className='text-green-500'>Md. Abdul Kader</span>
                 </h2>
-                <div className='text-white'>
+                <div className='text-white w-full'>
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
                             "A Web Developer",
-                            1000, // wait 1s before replacing "Mice" with "Hamsters"
+                            2000, // wait 1s before replacing "Mice" with "Hamsters"
                             "A YouTuber",
-                            1000,
+                            2000,
                             "A C++ Programmer",
-                            1000,
+                            2000,
                             "A Chess Lover",
-                            1000
+                            2000
                         ]}
                         wrapper="span"
                         cursor={true}
                         repeat={Infinity}
-                        className='text-black dark:text-white block font-bold text-4xl'
+                        className='text-black dark:text-white block font-bold text-3xl  md:text-4xl'
                     />
 
                 </div>
-                <div className='button-div w-full flex  relative'>
+                <div className='flex w-full mt-5 div-btn'>
 
-
-                    <button className="button-54 h-20 uppercase btn-resume md:mr-10 ">
-                        <Link className='inline relative'>
-                            resume <FaDownload className='inline btn-icon' />
-                        </Link>
+                    <button className="button-54 py-2 px-10 mr-5   uppercase btn-resume">
+                        <a className='text-black dark:text-white text-sm font-bold relative top-0 tracking-normal hover:text-white'>resume < FaDownload className='relative inline' /></a>
                     </button>
-
-
-
-                    <button className="button-54 uppercase btn-hire" >
-                        hire me <FaArrowRight className='inline btn-icon' />
+                    <button className="button-54  mr-5 md:mr-0 py-2 px-10 relative uppercase  btn-hire" >
+                        <a className='text-black dark:text-white text-sm font-bold relative top-0 tracking-normal hover:text-white'>hire me <FaArrowRight className='relative inline' /></a>
                     </button>
 
                 </div>

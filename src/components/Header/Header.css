@@ -17,15 +17,11 @@
 /* CSS */
 .button-54 {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
   border: 1px solid;
-  padding: 0.5rem 1.8rem; 
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   cursor: pointer;
+
 }
 
 .box-shadow{
@@ -39,30 +35,18 @@
 .button-54:hover{
     border-radius: 5px!important;
 }
- @media (max-width: 500px) {
-  .button-54,
-  .btn-resume,
-  .btn-hire {
-      font-size: 12px;
-      width: auto;
-    
-  }
-  .btn-icon {
-      display: none;
-  }
-} 
-@media(max-width:300px){
-  .button-div{
+ @media (max-width: 440px) {
+  .div-btn{
     flex-direction: column;
-    
-    text-align: center;
   }
-  .button-54{
-    width: auto;
-    margin-right:0;
-   
+  .btn-resume{
+    margin-bottom: 1rem;
   }
-}
+  .hire-me{
+    margin-right: 0;
+  }
+ }
+
 .btn-resume:hover {
   background-color: rgb(104, 220, 243) !important;
 }

@@ -8,11 +8,12 @@ const Blog = () => {
     const isLoading = useLoading();
 
     return (
-        <div className='blog-container min-h-screen'>
+        <div className='min-h-screen'>
             {isLoading ? <Loader></Loader> :
 
-                <div className="card">
-                    <p>My Blogs</p>
+                <div className="py-5">
+                    <h2 className="text-center dark:text-white text-4xl md:text-5xl font-bold mb-5" >My Projects</h2>
+
                 </div>
 
             }

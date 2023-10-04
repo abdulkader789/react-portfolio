@@ -11,10 +11,11 @@ const Home = () => {
     const isLoading = useLoading();
 
     return (
-        <div>
+        <div >
             {isLoading ? <Loader></Loader> :
                 <>
                     <Header></Header>
+
                     <About></About>
                     <Project></Project>
                     <Skill></Skill>

@@ -37,7 +37,7 @@
 
 //ThemeSwitcher.jsx
 import { useState, useEffect } from 'react';
-import { FaMoon } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeSwitcher = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -65,7 +65,8 @@ const ThemeSwitcher = () => {
                 className={`px-4 py-2 rounded-full ${darkMode ? 'bg-yellow-400 text-gray-900' : 'bg-gray-800 text-white'
                     } transition-colors duration-200 flex items-center`}
             >
-                {darkMode ? <FaMoon /> : <FaMoon />}
+                {darkMode ? <FaSun color="white" /> : <FaMoon />
+                }
             </button>
         </div>
     );
