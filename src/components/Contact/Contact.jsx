@@ -5,16 +5,16 @@ const Contact = () => {
     const isLoading = useLoading();
 
     return (
-        <div>
+        <div className='min-h-screen'>
             {isLoading ? <Loader></Loader> :
 
-                <div className="text-gray-100 px-8">
+                <div>
                     <div
-                        className="max-w-screen-xl bg-inherit  px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+                        className="max-w-screen-xl bg-inherit  px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-violet-100 dark:bg-inherit dark:bg-gray-100 text-gray-900 rounded-lg shadow-lg">
                         <div className="flex flex-col justify-between">
                             <div>
-                                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-gray-100">Lets talk about everything!</h2>
-                                <div className="text-gray-100 mt-8">
+                                <h2 className="text-4xl lg:text-5xl font-bold leading-tight text-black dark:text-gray-100">Lets talk about everything!</h2>
+                                <div className="text-black dark:text-gray-100 mt-8">
                                     Hate forms? Send me an <span className="underline cursor-pointer">email</span> instead.
                                 </div>
                             </div>
@@ -518,17 +518,17 @@ const Contact = () => {
                         </div>
                         <div className="">
                             <div>
-                                <span className="uppercase text-sm text-gray-100 font-bold">Full Name</span>
+                                <span className="uppercase text-sm text-black dark:text-gray-100 font-bold">Full Name</span>
                                 <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                     type="text" placeholder="" />
                             </div>
                             <div className="mt-2">
-                                <span className="uppercase text-sm text-gray-100 font-bold">Email</span>
+                                <span className="uppercase text-sm text-black dark:text-gray-100 font-bold">Email</span>
                                 <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                                     type="text" />
                             </div>
                             <div className="mt-2">
-                                <span className="uppercase text-sm text-gray-100 font-bold">Message</span>
+                                <span className="uppercase text-sm text-black dark:text-gray-100 font-bold">Message</span>
                                 <textarea
                                     className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
                             </div>
@@ -542,7 +542,7 @@ const Contact = () => {
                     </div>
                 </div>
             }
-        </div>
+        </div >
     );
 };
 

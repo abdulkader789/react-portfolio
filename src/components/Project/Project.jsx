@@ -7,7 +7,7 @@ const Project = () => {
 
     return (
 
-        <div className=''>
+        <div className='bg-[#ffffff] dark:bg-inherit max-w-screen-xl mx-auto rounded-xl mb-10 shadow-md'>
             {isLoading ? <Loader></Loader> :
 
                 <section className='project py-5'>

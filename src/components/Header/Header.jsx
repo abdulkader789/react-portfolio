@@ -20,7 +20,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Header = () => {
 
     return (
-        <div className='md:h-[95vh] flex flex-col items-center md:flex-row  relative'>
+        <div className='top-0 md:h-screen-xl mb-10 h-full dark:bg-inherit max-w-screen-xl bg-[#fcfcdf] rounded-xl flex mx-auto shadow-md flex-col items-center md:flex-row  relative'>
             <div className=' flex flex-col items-center w-full box-shadow md:w-1/2 lg:mx-20 h-[450px] justify-center
             dark:text-white'>
                 <h2 className=' md:text-4xl lg:text-5xl text-3xl _ProstoOne  w-full'>

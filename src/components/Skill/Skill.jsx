@@ -37,7 +37,7 @@ const Skill = () => {
     const isLoading = useLoading();
 
     return (
-        <div className='min-h-screen'>
+        <div className='bg-[#fefffc] dark:bg-inherit max-w-screen-xl py-10  mx-auto rounded-xl mb-10  shadow-md'>
             {isLoading ? <Loader></Loader> :
                 <div>
 
@@ -52,7 +52,7 @@ const Skill = () => {
                             <Lottie animationData={animationData} autoplay loop />
                         </div>
 
-                        <div className='w-full relative md:w-1/2 skills text-gray-100 top-10'>
+                        <div className='w-full relative md:w-1/2 skills text-black dark:text-gray-100 top-10'>
 
                             <Skills skillData='React' />
                             <Skills skillData='Node' />

@@ -6,6 +6,8 @@ import {
 } from 'react-icons/fa';
 
 import './NavBar.css'
+import { TypeAnimation } from 'react-type-animation';
+
 import ThemeSwitcher from '../../utils/ThemeSwitcher';
 const NavBar = () => {
 
@@ -37,15 +39,48 @@ const NavBar = () => {
 
 
 
-                <div className=" w-full flex justify-evenly">
-                    <h2 className=' nav-title  border-black dark:border-white'>
+                <div className=" w-full flex justify-evenly relative top-1">
+                    {/* <h2 className=' nav-title  border-black dark:border-white'>
                         <Link to="/home" className=' rounded-xl text-black dark:text-white  relative top-0 text-center'>
                             <span className='full-text '>Abdul Kader</span>
                             <span className='short-text hidden'>AB</span>
 
                         </Link>
-                    </h2>
+                    </h2> */}
+                    <h2 className=' text-black dark:text-white block font-bold text-3xl  md:text-4xl'>
 
+                        <span>&#123;</span>
+                        <TypeAnimation
+                            sequence={[
+                                "A",
+                                1000,
+                                "B",
+                                1000,
+                                "D",
+                                1000,
+                                "U",
+                                1000,
+                                "L",
+                                1000,
+                                "K",
+                                1000,
+                                "A",
+                                1000,
+                                "D",
+                                1000,
+                                "E",
+                                1000,
+                                "R",
+                                1000,
+
+                            ]}
+                            wrapper="span"
+                            cursor={false}
+                            repeat={Infinity}
+                            className=''
+                        />
+                        <span>&#125;</span>
+                    </h2>
                 </div>
 
                 <div className=" w-full hidden md:flex  justify-evenly items-center relative">
