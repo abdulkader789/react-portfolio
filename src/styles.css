@@ -22,4 +22,8 @@ body{
     font-family: 'Poppins', sans-serif;
     src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url('./fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+}
 

@@ -7,7 +7,7 @@ const Main = () => {
 
     return (
 
-        <div className='dark:bg-[#00121B] bg-blend-soft-lighten'>
+        <div className='dark:bg-[#131415] bg-blend-soft-lighten'>
             <NavBar></NavBar>
             <TransitionEffect />
             <Outlet></Outlet>

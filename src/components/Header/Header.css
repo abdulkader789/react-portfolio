@@ -1,18 +1,31 @@
 
 /* Define font classes for different font weights */
 ._Montserrat{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
 }
 ._Roboto{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
 
 
 }
 ._ProstoOne{
-    font-family: 'Prosto One';
+    font-family: 'Prosto One',sans-serif;
 
 }
+._Poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0,0,0,.3);
 
+}
+._Roboto_Mono{
+font-family: 'Roboto Mono', monospace;
+/* line-height: 1.5em; */
+/* font-size: 23px; */
+/* letter-spacing: 2.2px; */
+font-weight: 600;
+}
 
 /* CSS */
 .button-54 {
@@ -75,4 +88,12 @@
   }
   
   
-  
+.header-left{
+ 
+  background-image: url('../../images/endless-constellation5.svg');
+}
+.header-right{
+
+  background-image: url('../../images/endless-constellation3.svg');
+
+}

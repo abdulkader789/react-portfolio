@@ -3,8 +3,6 @@
    display:flex;
    justify-content:space-evenly;
    flex-direction:column;
-   color: #0ff;
-   font-size: 1.5vw;
    align-items:center;
  }
 .loader-container{
@@ -16,7 +14,7 @@
    width:150px;
    height:150px;
    border-radius:50%;
-   box-shadow: 2px 2px 8px #fff,
+   box-shadow: 2px 2px 8px #ffffff,
                4px 4px 8px #fff;
    border:10px solid #fff;
     border-bottom:10px solid transparent;
@@ -27,7 +25,7 @@
    width: 120px;
    height:120px;
    border-radius: 50%;
-   border: 8px solid #eee;
+   border: 8px solid #eeeeee;
     border-right:10px solid transparent;
    animation: inner 1s linear infinite;
  }

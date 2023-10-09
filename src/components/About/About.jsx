@@ -9,7 +9,7 @@ const About = () => {
     const isLoading = useLoading();
 
     return (
-        <div className='relative pt-10 mb-10 max-w-screen-xl shadow-md  bg-[#ebfedf] dark:bg-inherit rounded-xl mx-auto'>
+        <div className=' pt-10  max-w-screen-xl shadow-md  bg-[#ebfedf] dark:bg-inherit rounded-xl mx-auto'>
 
             {isLoading ? <Loader></Loader> :
                 <section className=''>
