@@ -12,56 +12,21 @@ import ThemeSwitcher from '../../utils/ThemeSwitcher';
 const NavBar = () => {
 
     return (
-        <div className='w-full md:sticky md:top-0 md:z-20 h-14 flex justify-evenly px-10 lg:px-0'>
-            <div className=" w-20 flex justify-evenly relative top-1">
-                {/* <h2 className=' nav-title  border-black dark:border-white'>
-                        <Link to="/home" className=' rounded-xl text-black dark:text-white  relative top-0 text-center'>
-                            <span className='full-text '>Abdul Kader</span>
-                            <span className='short-text hidden'>AB</span>
 
-                        </Link>
-                    </h2> */}
-                <h2 className=' text-black dark:text-white block font-bold text-3xl  md:text-4xl'>
+        <div className='flex flex-col'>
+            <h2 className='capitalize text-[65px] title   text-center'>abdul kader</h2>
+            <p className='uppercase text-xl text-center sub-title '>Dhaka Based, CSE Graduate, Youtuber, love guiter, drawing & chess</p>
+            <nav className='options uppercase flex justify-center'>
+                <ul className='flex w-[800px] justify-evenly'>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>projects</li>
+                    <li>hire me</li>
 
-                    <span>&#123;</span>
-                    <TypeAnimation
-                        sequence={[
-                            "A",
-                            1000,
-                            "B",
-                            1000,
-                            "D",
-                            1000,
-                            "U",
-                            1000,
-                            "L",
-                            1000,
-                            "_",
-
-                            1000,
-                            "K",
-                            1000,
-                            "A",
-                            1000,
-                            "D",
-                            1000,
-                            "E",
-                            1000,
-                            "R",
-                            1000,
-
-                        ]}
-                        wrapper="span"
-                        cursor={false}
-                        repeat={Infinity}
-                        className=''
-                    />
-                    <span>&#125;</span>
-                </h2>
-            </div>
-            <nav className='flex justify-center lg:py-2 h-full w-[600px]'>
-
-                <ul className='w-full lg:border-black dark:border-white  lg:border-t-2 flex justify-evenly z-20 lg:z-auto fixed  lg:relative h-20 bottom-0 lg:top-3 lg:h-full right-5 lg:right-auto'>
+                </ul>
+            </nav>
+            <nav className='flex justify-center lg:py-2 h-full w-[600px] '>
+                <ul className='w-full md:hidden  flex justify-evenly z-20  fixed   h-20 bottom-0   right-5 '>
 
                     <li>
                         <Link to="/home" className='Link '><FaHome className='fa-icon nav-btn' /> </Link>
@@ -83,27 +48,8 @@ const NavBar = () => {
                     </li >
 
                 </ul>
-
-
-
-
-                {/* 
-                <div className=" w-full hidden md:flex  justify-evenly items-center relative">
-
-                   <a className='relative top-0'><FaTwitter className="fa-icon nav-social" /></a> 
-                <a className='relative top-0'><FaGithubSquare className="fa-icon nav-social" /></a>
-                <a className='relative top-0'><FaFacebookSquare className="fa-icon nav-social" /></a>
-                <a className='relative top-0'><FaLinkedin className="fa-icon nav-social" /></a>
-                <a className='relative top-0'><FaEnvelope className="fa-icon nav-social" /></a>
-                <a className='relative top-0'><FaComment className="fa-icon nav-social" /></a>
-
-        </div>  */}
-
-
             </nav >
-            < div className='flex items-center w-20' >
-                <ThemeSwitcher></ThemeSwitcher>
-            </div >
+
         </div >
     );
 };

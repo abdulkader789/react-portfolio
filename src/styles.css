@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    /* background-color:  #00121B; */
-    font-size: 16px; /* Set a base font size for the root element */
+    font-size: 16px; 
 }
 
 @font-face {
@@ -26,4 +25,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     src: url('./fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('./fonts/Proxima Nova Font.otf') format('truetype');
+}

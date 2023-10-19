@@ -1,56 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+ 
  .fa-icon{
 	font-size: 1.8rem;
 	cursor: pointer;
 	
 }
-
-
- .nav-title {
-	font-family: "Roboto";
-	border-radius: 50px;   
-	border-width: 10px;
-}
-
-.dark-container-shadow{
-	text-shadow: 0 0 13px #fff, 0 0 5px #fff, 0 0 3px #fff, 0 0 40px #209991,
-		0 0 250px #209991, 0 0 154px #209991, 0 0 80px #209991;
-}
-
-.dark-title-shadow{
-	box-shadow: 0 0 9px #fff, 0 0 5px #fff, 0 0 3px #fff, 0 0 40px #209991,
-		0 0 50px #209991, 0 0 40px #209991, inset 0 0 40px #209991;
-}
-
-/* @keyframes pulsate {
-	100% {
-		text-shadow: 0 0 3px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 40px #209991,
-			0 0 30px #209991, 0 0 30px #209991, 0 0 40px #209991;
-	}
-	0% {
-		text-shadow: 0 0 3px #fff, 0 0 14px #fff, 0 0 30px #fff, 0 0 3px #209991,
-			0 0 20px #209991, 0 0 40px #209991, 0 0 20px #209991;
-	}
-}
-*/ 
-
-
-@media(max-width:530px){
-  .full-text{
-	display: none;
-  }
-  .short-text{
-	display: block;
-	width:100px;
-  }
-  .nav-title{
-	border-radius: 20px;
-  }
-	
-	
-}
-
-
-
 
 .nav-btn {
 	border-radius: 100%;
@@ -70,12 +25,34 @@
 	padding:3px;
 }
 
-/* .icon-container:hover .social-icons{
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top:0;
-	height: 300px;
-	left: 0;
-	border:1px solid;
-} */
+
+
+.title{
+	font-family: 'proxima-nova';
+    font-weight: 700;
+	font-size: 72px;
+	line-height: 72px;
+	letter-spacing: 10px;
+	color:rgb(18, 18, 18);
+}
+
+.sub-title{
+	
+    font-family: 'proxima-nova';
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    font-size: 14px;
+    color: #a8a8a8;
+    padding-left: 3px;
+}
+.options{
+	font-family: 'proxima-nova';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7em;
+    letter-spacing: 2px;
+
+}

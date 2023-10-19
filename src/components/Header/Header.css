@@ -12,12 +12,14 @@
     font-family: 'Prosto One',sans-serif;
 
 }
-._Poppins{
+._Poppins_title{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-shadow: 1px 3px 11px rgba(0,0,0,.3);
-
+}
+button:hover{
+  opacity: 0.8;
 }
 ._Roboto_Mono{
 font-family: 'Roboto Mono', monospace;
