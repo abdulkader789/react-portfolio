@@ -1,59 +1,33 @@
 import { Link } from 'react-router-dom';
-// import ThemeSwitcher from '../../utils/ThemeSwitcher';
-import {
-    FaTwitter, FaGithubSquare, FaFacebookSquare, FaLinkedin, FaEnvelope, FaComment,
-    FaHome, FaInfoCircle, FaLaptop, FaTools, FaBook, FaGlobe
-} from 'react-icons/fa';
 
-import './NavBar.css'
-import { TypeAnimation } from 'react-type-animation';
-
-import ThemeSwitcher from '../../utils/ThemeSwitcher';
 const NavBar = () => {
-
     return (
+        <div className='p-10 fixed z-10 text-white w-full h-auto'>
+            <div className="flex h-20 w-full bg-gray-800 py-4 px-6 rounded-l-full rounded-r-full">
+                <div className='logo w-[15%] h-full flex justify-evenly items-center'>
 
-        <div className='flex flex-col'>
-            <h2 className='capitalize text-[65px] title   text-center'>abdul kader</h2>
-            <p className='uppercase text-xl text-center sub-title '>Dhaka Based, CSE Graduate, Youtuber, love guiter, drawing & chess</p>
-            <nav className='options uppercase flex justify-center'>
-                <ul className='flex w-[800px] justify-evenly'>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>projects</li>
-                    <li>hire me</li>
+                    <img className='w-10 mt-5 h-10 rounded-full' src='https://i.pinimg.com/originals/82/c6/5b/82c65b9bb0a75026fc4c82a438b4cc9b.jpg' alt="logo" />
 
-                </ul>
-            </nav>
-            <nav className='flex justify-center lg:py-2 h-full w-[600px] '>
-                <ul className='w-full md:hidden  flex justify-evenly z-20  fixed   h-20 bottom-0   right-5 '>
+                    <h2 className='text-center uppercase font-bold'>abdul<br />kader</h2>
+                </div>
+                <nav className='w-[70%] h-full'>
+                    <ul className='flex h-full w-full justify-evenly items-center font-proxima uppercase'>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>Resume</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                        <li>Blog</li>
+                        <li>light</li>
+                    </ul>
 
-                    <li>
-                        <Link to="/home" className='Link '><FaHome className='fa-icon nav-btn' /> </Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className='Link'><FaInfoCircle className="fa-icon nav-btn" /> </Link>
-                    </li>
-                    <li>
-                        <Link to="/project" className='Link'><FaLaptop className="fa-icon nav-btn" /> </Link>
-                    </li>
-                    <li>
-                        <Link to="/skill" className='Link'><FaTools className="fa-icon nav-btn" /> </Link>
-                    </li>
-                    <li>
-                        <Link to="/blog" className='Link'><FaBook className="fa-icon nav-btn " /></Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" className='Link'><FaEnvelope className="fa-icon nav-btn" /> </Link>
-                    </li >
-
-                </ul>
-            </nav >
-
-        </div >
+                </nav>
+                <div className='w-[15%] h-full flex justify-center items-center'>
+                    <button className='uppercase bg-white text-black px-8 py-2 rounded-l-full rounded-r-full'>resume</button>
+                </div>
+            </div>
+        </div>
     );
 };
-
-
 
 export default NavBar;

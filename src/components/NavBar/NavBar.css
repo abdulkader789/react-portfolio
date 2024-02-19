@@ -1,58 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
  
- .fa-icon{
-	font-size: 1.8rem;
-	cursor: pointer;
-	
-}
-
-.nav-btn {
-	border-radius: 100%;
-  border: 2px solid #fefefe;
-  box-shadow: 4px 4px #dccebc;
-  color:rgb(26, 24, 24);
-  padding:3px;
-  background-color: #fff5f5;
-}
-
-.nav-social{
-	border-radius: 100%;
-	border: 2px solid #fefefe;
-	background-color: #fff5f5;
-	box-shadow: 4px 4px #dccebc;
-	color:rgb(86, 198, 238);
-	padding:3px;
-}
-
-
-
-.title{
-	font-family: 'proxima-nova';
-    font-weight: 700;
-	font-size: 72px;
-	line-height: 72px;
-	letter-spacing: 10px;
-	color:rgb(18, 18, 18);
-}
-
-.sub-title{
-	
+ .nav-font{
     font-family: 'proxima-nova';
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    line-height: 1.8em;
-    font-size: 14px;
-    color: #a8a8a8;
-    padding-left: 3px;
-}
-.options{
-	font-family: 'proxima-nova';
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.7em;
-    letter-spacing: 2px;
-
-}
+ }

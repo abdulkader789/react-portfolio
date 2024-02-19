@@ -18,9 +18,7 @@
   letter-spacing: 2.2px;
   text-shadow: 1px 3px 11px rgba(0,0,0,.3);
 }
-button:hover{
-  opacity: 0.8;
-}
+
 ._Roboto_Mono{
 font-family: 'Roboto Mono', monospace;
 /* line-height: 1.5em; */
@@ -29,73 +27,3 @@ font-family: 'Roboto Mono', monospace;
 font-weight: 600;
 }
 
-/* CSS */
-.button-54 {
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  border: 1px solid;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  cursor: pointer;
-
-}
-
-.box-shadow{
-  color: #131212;
-  border: 1px solid;
-  padding: 0.5rem 1.8rem; 
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  
-}
-
-.button-54:hover{
-    border-radius: 5px!important;
-}
- @media (max-width: 440px) {
-  .div-btn{
-    flex-direction: column;
-  }
-  .btn-resume{
-    margin-bottom: 1rem;
-  }
-  .hire-me{
-    margin-right: 0;
-  }
- }
-
-.btn-resume:hover {
-  background-color: rgb(104, 220, 243) !important;
-}
-
-.btn-hire:hover {
-  background-color: rgb(70, 207, 75) !important;
-}
-
-
-.header-lottie {
-    animation: glow 4s infinite; /* Apply the glow animation on hover */
-    border-radius: 100%;
-
-  }
-
-  @keyframes glow {
-    0% {
-        transform: scale(1); /* Initial scale */
-      }
-      50% {
-        transform: scale(0.9); /* Glowing effect - scale up */
-      }
-      100% {
-        transform: scale(1); /* Return to the initial scale */
-      }
-  }
-  
-  
-.header-left{
- 
-  background-image: url('../../images/endless-constellation5.svg');
-}
-.header-right{
-
-  background-image: url('../../images/endless-constellation3.svg');
-
-}
