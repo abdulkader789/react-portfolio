@@ -13,7 +13,7 @@ const About = () => {
 
             {isLoading ? <Loader></Loader> :
                 <section className=''>
-                    <h2 className='dark:hidden py-[1.5rem]   about-heading text-[#0f0f0f] font-[Montserrat] font-extrabold text-4xl sm:text-5xl capitalize text-center'>about me</h2>
+                    <h2 className="text-center capitalize dark:hidden text-4xl md:text-5xl font-bold mb-5" >about me</h2>
 
                     <div className="table-container hidden dark:block " >
                         <h2 className='about-heading text-[#80FF80] font-[Montserrat] text-4xl sm:text-5xl capitalize text-center'>about me</h2>

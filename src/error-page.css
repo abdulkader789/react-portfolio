@@ -92,14 +92,6 @@ h1::after {
 /* Rest of your styles... */
 
 
-a {
-    font-size: 1.5em;
-    position: absolute;
-    bottom: 20px;  
-    letter-spacing: 10px;
-    text-decoration: none;
-    color: white;
-}
 
 img {
     position: absolute;
