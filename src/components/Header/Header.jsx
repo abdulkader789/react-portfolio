@@ -13,7 +13,7 @@ const Header = () => {
           />
           <div className="absolute inset-0 bg-green-500 opacity-50"></div>
         </div>
-        <div className="flex justify-center items-center -top-10 h-full absolute inset-y-0 left-1/2 transform -translate-x-1/2">
+        <div className="flex justify-center items-center -top-6 h-full absolute inset-y-0 left-1/2 transform -translate-x-1/2">
           <div className="flex six-caps-regular text-6xl md:text-8xl">
             <div className="border rounded-l-full bg-white h-[200px] w-[100px] md:h-[300px] md:w-[150px] flex justify-center items-center">
               <h2 className="text-center hidden md:inline-block font-bold   uppercase">
@@ -38,8 +38,8 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 w-full h-1/2 md:h-full items-center flex flex-col justify-center dark:bg-gray-700 bg-gray-100 md:pt-72">
-          <div>
+        <div className="md:w-1/2 w-full h-1/2 md:h-full items-center md:justify-center flex flex-col  dark:bg-gray-700 bg-gray-100 md:pt-80">
+          <div className="mt-24 lg:mt-0">
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -54,13 +54,13 @@ const Header = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
+              style={{ display: "inline-block" }}
               repeat={Infinity}
-              className="text-green-600 uppercase poppins-bold"
+              className="text-green-600 uppercase poppins-bold text-xl"
             />
           </div>
-          <div className="px-10 my-4">
-            <h2 className="poppins-regular text-md dark:text-white">
+          <div className="px-3 lg:px-10 my-4">
+            <h2 className="poppins-regular text-sm md:text-md dark:text-white">
               Hi, my name is Abdul Kader and I am from Dhaka, Bangladesh. I am a
               MERN stack web developer and a final year university student
               pursuing B.Sc in CSE.

@@ -34,42 +34,43 @@
 
 // export default ThemeSwitcher;
 
-
 //ThemeSwitcher.jsx
-import { useState, useEffect } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { useState, useEffect } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const ThemeSwitcher = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-    useEffect(() => {
-        const isDarkMode = localStorage.getItem('darkMode') === 'true';
-        console.log('Is Dark Mode:', isDarkMode);
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    console.log("Is Dark Mode:", isDarkMode);
 
-        setDarkMode(isDarkMode);
-    }, []);
+    setDarkMode(isDarkMode);
+  }, []);
 
-    useEffect(() => {
-        document.documentElement.classList.toggle('dark', darkMode);
-        localStorage.setItem('darkMode', darkMode);
-    }, [darkMode]);
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
 
-    const toggleDarkMode = () => {
-        setDarkMode((prevMode) => !prevMode);
-    };
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
 
-    return (
-        <div>
-            <button
-                onClick={toggleDarkMode}
-                className={`px-4 py-2 rounded-full text-black ${darkMode ? 'bg-gray-200 ' : 'bg-gray-200  '
-                    } transition-colors duration-200 flex items-center`}
-            >
-                {darkMode ? <FaSun /> : <FaMoon />
-                }
-            </button>
-        </div>
-    );
+  return (
+    <div>
+      <button
+        onClick={toggleDarkMode}
+        className={`px-4 py-2 lg:rounded-full  ${
+          darkMode
+            ? "lg:bg-gray-500 text-yellow-400"
+            : "lg:bg-gray-200  text-black"
+        } transition-colors duration-200 flex items-center`}
+      >
+        {darkMode ? <FaSun /> : <FaMoon />}
+      </button>
+    </div>
+  );
 };
 
 export default ThemeSwitcher;
