@@ -22,13 +22,11 @@ const NavBar = () => {
           />
 
           <h2 className="text-center uppercase michroma-regular font-bold">
-            abdul
-            <br />
-            kader
+            abdul kader
           </h2>
         </div>
         <nav className="w-full h-full">
-          <ul className="hidden md:flex h-full w-full justify-evenly items-center michroma-regular capitalize ">
+          <ul className="hidden md:flex h-full w-full text-[14px] justify-evenly items-center michroma-regular capitalize ">
             <li>
               <Link to="/" className="flex items-center justify-center">
                 <FaHome className="mr-1" /> Home
