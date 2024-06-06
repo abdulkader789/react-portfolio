@@ -21,7 +21,7 @@ const NavBar = () => {
             alt="logo"
           />
 
-          <h2 className="text-center uppercase michroma-regular font-bold">
+          <h2 className="text-center uppercase michroma-regular text-[14px] font-bold">
             abdul kader
           </h2>
         </div>
